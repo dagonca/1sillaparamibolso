@@ -12,7 +12,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    [Parse setApplicationId:@"MRFMHbMQfaKWif21AzuQCcqeQlRe7hYge2VNtW8u"
+                  clientKey:@"LgUpPNRBjZOXNsvnFCmMCvQX7vYzbx0OIc7lExz8"];
+    [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound];
+    
+    sleep(0);
     // Override point for customization after application launch.
+    UIPageControl *pageControl = [UIPageControl appearance];
+    pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+    pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
+    pageControl.backgroundColor = [UIColor whiteColor];
+    
+    [[UITabBar appearance] setTintColor:[UIColor colorWithRed:(167/255.0) green:(18/255.0) blue:(6/255.0) alpha:1]];
+    
+
+    sleep(1);
+    
     return YES;
 }
 							

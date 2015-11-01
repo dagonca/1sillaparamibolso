@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ContactoViewController.h
 //  1sillaparamibolso
 //
 //  Created by Dani Gonzalez castillo on 03/12/13.
@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
 
-@interface ViewController : UIViewController
+@interface ContactoViewController : UITableViewController<MFMessageComposeViewControllerDelegate>
 
 @end

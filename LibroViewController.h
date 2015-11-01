@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  LibroViewController.h
 //  1sillaparamibolso
 //
 //  Created by Dani Gonzalez castillo on 03/12/13.
@@ -7,13 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Parse/Parse.h>
 
-
-
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface LibroViewController : UITableViewController
 
 @end
